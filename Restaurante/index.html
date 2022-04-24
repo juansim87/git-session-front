@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mozza Bar</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="./pics/mozzabar logo blanco.png"
+          alt="We are open"
+          class="mozzalogo"
+        />
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#concept">Concepto</a></li>
+          <li><a href="#pics">Fotos</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#reservation">Reservas</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <span class="hometext1">Descubre</span>
+      <span class="barName">Mozza Bar</span>
+      <div class="chefhat">
+        <img
+        class="chefhat__logo"
+        src="./pics/chef-hat-svgrepo-com.svg"
+        alt="Logo"
+        class="nav-logo"
+      />
+    </div>
+      <span class="hometext2">We are open</span>
+    </section>
+    <section id="concept">
+      <h1 class="concept__title">Concepto</h1>
+      <p class="concept__text text1">
+        Mozzas Bar es un fantástico restaurante de cocina internacional ubicado
+        en el exclusivo barrio de Salamanca. Distribuido en una única planta y
+        una estupenda terraza, destaca por su decoración urbana con toques
+        rústicos, que doran al local de un ambiente especial y acogedor.
+      </p>
+      <p class="concept__text text2">
+        Disfruta de sus desayunos, estimila tus sentidos con nuestros mejores
+        platos o disfruta de nuestro AfterWork en buena compañía
+      </p>
+      <p class="concept__text text3">
+        En Mozza Bar encontrarás clásicos de la gastronomía mundial, elaborados
+        con productos siempre frescos, de calidad y un toque de personalidad.
+      </p>
+    </section>
+    <section id="pics">
+      <img src="./pics/restaurante.jpg" />
+    </section>
+    <section id="menu">
+      <h1 class="menu__title">Carta</h1>
+      <div class="servicios">
+        <span>Desayunos</span>
+        <span>Carta</span>
+        <span>Cocktails</span>
+      </div>
+    </section>
+    <section id="reservation">
+      <h1 class="reservation__title">Reservas</h1>
+      <form
+        autocomplete="off"
+        action="https://reqres.in/api/users"
+        method="post"
+        class="reservation__info"
+      >
+        <label for="reservation__select" class="reservation__label"
+          >Personas</label
+        >
+        <select name="personas" id="reservation__select" required>
+          Personas
+          <option value="1" class="reservation_opt">1 persona</option>
+          <option value="2" selected class="reservation__opt">
+            2 personas
+          </option>
+          <option value="3" class="reservation__opt">3 personas</option>
+          <option value="4" class="reservation__opt">4 personas</option>
+          <option value="5" class="reservation__opt">5 personas</option>
+        </select>
+        <label for="reservation__time" class="reservation__label">Hora</label>
+        <select name="time" id="reservation__time" required>
+          <option
+            value="default"
+            selected
+            disabled
+            hidden
+            class="reservation__opt"
+          >
+            Selecciona la hora
+          </option>
+          <option value="07:30" class="reservation__opt">07:30</option>
+          <option value="08:30" class="reservation__opt">08:30</option>
+          <option value="09:30" class="reservation__opt">09:30</option>
+          <option value="10:30" class="reservation__opt">10:30</option>
+          <option value="11:30" class="reservation__opt">11:30</option>
+          <option value="12:30" class="reservation__opt">12:30</option>
+        </select>
+        <label for="reservation__table" class="reservation__label">Tipo de mesa</label>
+        <select name="table" id="reservation__table" required>
+          <option
+            value="default"
+            selected
+            disabled
+            hidden
+            class="reservation__opt"
+          >
+            Selecciona el tipo de mesa
+          </option>
+          <option value="redonda" class="reservation__opt">Redonda</option>
+          <option value="larga" class="reservation__opt">Larga</option>
+        </select>
+        <button type="submit" class="reservation__btn reservation__btn--submit">Reservar</button>
+        <label for="espera" class="reservation__label">Si no encuentra disponibilidad, apúntese en la lista de espera</label>
+      </form>
+      <aside class="restaurant__info">
+        <span class="restaurant__info--name1">Mozzabar</span>
+        <span class="restaurant__info--name 2">Food & Drinks</span>
+        <span class="restaurant__info--adress">Conde de Peñalver 64</span>
+        <span class="restaurant__info--adress">28006 - Madrid</span>
+        <span class="restaurant__info--adress">Abrimos de lunes a domingo</span>
+        <span class="restaurant__info--adress">de 07:30 a 01:30</span>
+      </aside>
+    </section>
+    <section id="blog"><!---Aquí el blog--></section>
+    
+    <section id="contact"><!---Aquí rrss--></section>
+<div class="contact__pt1">
+    <img src="./pics/mozzabar logo blanco.png" alt="mozzalogo">
+
+    <h1 class="contact__title1">Ven cuando quieras</h1>
+<div class="contact__adress">
+  <img src="./pics/map-svgrepo-com.svg" alt="dirección" class="icon icon--map">
+  <span class="contact__adress--street">C/ Conde de Peñalver 64</span>
+  <span class="contact__adress--street">28006 - Madrid</span>
+</div>
+  
+<div class="contact__number">
+    <img src="./pics/smartphone-svgrepo-com.svg" alt="telefono" class="icon icon--phone">
+    <span class="contact__adress--number">910 258 327</span>
+</div>
+
+<div class="contact__mail">
+  <img src="./pics/mail-svgrepo-com.svg" alt="mail" class="icon icon--mail">
+  <span class="contact__adress--mail">hola@mozzabar.es</span>
+</div>
+</div>
+
+<div class="contact_pt2">
+  <h1 class="contact__title2">Síguenos</h1>
+  <div class="btn__rrss">
+    <button class="btn__rrss--facebook">Facebook</button>
+    <button class="btn__rrss--instagram">Instagram</button>
+
+  </div>
+</div>
+
+    <footer class="footer">
+      <div class="links">
+      <h2 class="footer__links">Enlaces de interés</h2>
+      <span class="footer__links--aviso">Aviso Legal</span>
+      <span class="footer__links--cookies">Cookies</span>
+    </div>
+    <div class="opentime">
+      <h2 class="footer__time">Horarios</h2>
+      <span class="footer__time--day">Lunes a domingo</span>
+      <span class="footer__time--hours">07:30-01:30</span>
+    </div>
+  </div>
+  <div class="footer__contact">
+    <h2 class="footer__contact--title">Contacto</h2>
+    <span class="footer__contact--adress">C/ Conde de Peñalver 64</span>
+    <span class="footer__contact--adress">28006 - Madrid</span>
+    <span class="footer__contact--phone">910 258 327</span>
+    <span class="footer__contact--mail">hola@mozzabar.es</span>
+  </div>
+    
+  <p class="footer__copyright">©2017. Todos los derechos reservados</p>
+  <div class="footer__icons-container">
+    <img src="./pics/facebook-svgrepo-com.svg" alt="facebook icon" class="icon icon--facebook">
+    <img src="./pics/instagram-brands.svg" alt="instagram icon" class="icon icon--instagram">
+
+  </div>
+    </footer>
+  </body>
+</html>
